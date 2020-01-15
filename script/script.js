@@ -65,7 +65,45 @@ function sacarPromedio(ListaDenumero) {
     return acumulador/ListaDenumero.length;
 }
 console.log(sacarPromedio ([8, 5, 6]));
+////
 
+function menoresaDIez(Listanumeros) {
+    let Listamenores= [];
+    for (let i=0 ; i < Listanumeros.length; i++){
+        if(Listanumeros[i]<10){
+            Listamenores.push(Listanumeros[i]); 
+        } 
+    }
+    return Listamenores;
+}
+   console.log (menoresaDIez([11, 15, 9, 7,4]));
+
+///
+
+function dobledecadanum (listanum) {
+    let numx2=[];
+    for (let i=0; i < listanum.length; i++){
+        numx2.push (listanum[i] * 2);
+    }
+    return numx2;
+}
+console.log (dobledecadanum ([10, 9, 18 ,17]));
+///
+
+
+function numprimo (num) {
+    for (let i= 2 ; i < num ; i ++){
+
+        if (num % i===0){
+    return false;
+}
+ else { 
+     return true;
+       }
+     }
+    }
+
+console.log (numprimo([8]));
 
 
 
