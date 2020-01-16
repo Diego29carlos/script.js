@@ -28,9 +28,9 @@ console.log (sumarlista3([2 ,5 ,6]));
 //ECMA script // arrow function//
 
 
-// que es una function=es un bloque de codigo que sirve para que una persona lo use 
-//for igual a cuando sabes que termina las interacciones
-//wite es cuando va a psar pero no sabes cuando 
+// Que es una function? es un bloque de codigo que sirve para que una persona lo use.
+//for igual a cuando sabes que termina las interacciones.
+//wite es cuando va a psar pero no sabes cuando.
 
 
 function cacularMaximo(ListaDenumero) {
@@ -105,6 +105,23 @@ function numprimo (num) {
 
 console.log (numprimo([8]));
 
+
+///
+
+
+function cinconumPrimos() {
+    const primerosprimos = [];
+
+    let candidatoAprimero= 2;
+    while (primerosprimos.length < 5){
+        if(esPrimo(candidatoAprimero)) {
+            primerosprimos.push(candidatoAprimero);
+        }
+        candidatoAprimero ++;
+    }
+    return primerosprimos;
+}
+  console.log(cinconumPrimos([1, 5, 6, 7, 8, 10]));
 
 
 
