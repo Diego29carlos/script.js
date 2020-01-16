@@ -111,10 +111,10 @@ console.log (numprimo([8]));
 
 function cinconumPrimos() {
     const primerosprimos = [];
-
+     
     let candidatoAprimero= 2;
     while (primerosprimos.length < 5){
-        if(esPrimo(candidatoAprimero)) {
+        if(numprimo(candidatoAprimero)) {
             primerosprimos.push(candidatoAprimero);
         }
         candidatoAprimero ++;
@@ -122,6 +122,7 @@ function cinconumPrimos() {
     return primerosprimos;
 }
   console.log(cinconumPrimos([1, 5, 6, 7, 8, 10]));
+
 
 
 
