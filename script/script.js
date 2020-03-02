@@ -123,7 +123,42 @@ function cinconumPrimos() {
 }
   console.log(cinconumPrimos([1, 5, 6, 7, 8, 10]));
 
+///
 
+
+function arrayRotateOne(arr,n) {
+    for(let i=0; i<n;i++){
+        arr.push(arr.shift());
+        console.log('execute',arr)
+      }
+      return arr;
+  }
+
+  console.log( arrayRotateOne([1,2,3,4,5,6],2));
+
+  ///
+
+
+  function arrayRotate(arr, reverse) {
+    if (reverse) arr.unshift(arr.pop());
+    else arr.push(arr.shift());
+    return arr;
+  }
+
+  arrayRotate([1,2,3,4]);
+  arrayRotate([1,2,3,4],true); 
+
+  ///
+
+
+  function arrayRotacion(arr,n) {
+    for(let i=0; i<n;i++){
+        arr.push(arr.shift());
+      }
+      return arr;
+  }
+
+  console.log( arrayRotacion([1,2,3,4,5,6],2));
 
 
 
